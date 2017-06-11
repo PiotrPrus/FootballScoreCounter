@@ -33,7 +33,7 @@
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:padding="16dp"
-                    android:text="Team A"
+                    android:text="@string/team_a"
                     android:textAppearance="@style/TextAppearance.AppCompat.Title"
                     android:textColor="@android:color/white"
                     android:textStyle="bold" />
@@ -44,7 +44,7 @@
                     android:layout_height="wrap_content"
                     android:gravity="center_horizontal"
                     android:padding="16dp"
-                    android:text="0"
+                    android:text="@string/default_value_for_counters"
                     android:textColor="@android:color/white"
                     android:textSize="50sp" />
 
@@ -64,7 +64,7 @@
                     android:layout_marginRight="15dp"
                     android:layout_marginTop="20dp"
                     android:background="#FFCA28"
-                    android:text="GOAL !"
+                    android:text="@string/goal"
                     android:textColor="@android:color/white"
                     android:textStyle="bold"
                     android:onClick="teamAGoalCounter"/>
@@ -81,7 +81,7 @@
                         android:layout_marginStart="20dp"
                         android:layout_weight="3"
                         android:background="#FFCA28"
-                        android:text="Shot attempt"
+                        android:text="@string/shot_attempt"
                         android:textColor="@android:color/white"
                         android:textSize="12sp"
                         android:textStyle="bold"
@@ -94,7 +94,7 @@
                         android:layout_weight="1"
                         android:gravity="center"
                         android:padding="10dp"
-                        android:text="0"
+                        android:text="@string/default_value_for_counters"
                         android:textColor="@android:color/white" />
 
                 </LinearLayout>
@@ -111,7 +111,7 @@
                         android:layout_marginStart="20dp"
                         android:layout_weight="3"
                         android:background="#FFCA28"
-                        android:text="Offside"
+                        android:text="@string/offside"
                         android:textColor="@android:color/white"
                         android:textSize="12sp"
                         android:textStyle="bold"
@@ -124,7 +124,7 @@
                         android:layout_weight="1"
                         android:gravity="center"
                         android:padding="10dp"
-                        android:text="0"
+                        android:text="@string/default_value_for_counters"
                         android:textColor="@android:color/white" />
 
                 </LinearLayout>
@@ -141,7 +141,7 @@
                         android:layout_marginStart="20dp"
                         android:layout_weight="3"
                         android:background="#FFCA28"
-                        android:text="Yellow card"
+                        android:text="@string/yellow_card"
                         android:textColor="@android:color/white"
                         android:textSize="12sp"
                         android:textStyle="bold"
@@ -154,7 +154,7 @@
                         android:layout_weight="1"
                         android:gravity="center"
                         android:padding="10dp"
-                        android:text="0"
+                        android:text="@string/default_value_for_counters"
                         android:textColor="@android:color/white" />
 
                 </LinearLayout>
@@ -171,7 +171,7 @@
                         android:layout_marginStart="20dp"
                         android:layout_weight="3"
                         android:background="#FFCA28"
-                        android:text="Red card"
+                        android:text="@string/red_card"
                         android:textColor="@android:color/white"
                         android:textSize="12sp"
                         android:textStyle="bold"
@@ -184,7 +184,7 @@
                         android:layout_weight="1"
                         android:gravity="center"
                         android:padding="10dp"
-                        android:text="0"
+                        android:text="@string/default_value_for_counters"
                         android:textColor="@android:color/white" />
 
 
@@ -203,7 +203,172 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:orientation="vertical"></LinearLayout>
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/teamB_text_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="16dp"
+                    android:text="@string/team_b"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/score_of_team_b_text_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:padding="16dp"
+                    android:text="@string/default_value_for_counters"
+                    android:textColor="@android:color/white"
+                    android:textSize="50sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@android:color/white" />
+
+                <Button
+                    android:id="@+id/goal_team_b"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="20dp"
+                    android:background="#FFCA28"
+                    android:text="@string/goal"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    android:onClick="teamBGoalCounter"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/shots_attemptted_team_b_result"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="@string/default_value_for_counters"
+                        android:textColor="@android:color/white" />
+
+                    <Button
+                        android:id="@+id/shot_attempt_button_team_b"
+                        android:layout_width="wrap_content"
+                        android:layout_height="36dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_weight="3"
+                        android:background="#FFCA28"
+                        android:text="@string/shot_attempt"
+                        android:textColor="@android:color/white"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:onClick="teamBShotAttempt"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/offside_team_b_result"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="@string/default_value_for_counters"
+                        android:textColor="@android:color/white" />
+
+                    <Button
+                        android:id="@+id/offside_button_team_b"
+                        android:layout_width="wrap_content"
+                        android:layout_height="36dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_weight="3"
+                        android:background="#FFCA28"
+                        android:text="@string/offside"
+                        android:textColor="@android:color/white"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:onClick="teamBOffsidesCounter"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/yellow_card_team_b_result"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="@string/default_value_for_counters"
+                        android:textColor="@android:color/white" />
+
+                    <Button
+                        android:id="@+id/yellow_card_button_team_b"
+                        android:layout_width="wrap_content"
+                        android:layout_height="36dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_weight="3"
+                        android:background="#FFCA28"
+                        android:text="@string/yellow_card"
+                        android:textColor="@android:color/white"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:onClick="teamBYellowCardsCounter"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/red_card_team_b_result"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="@string/default_value_for_counters"
+                        android:textColor="@android:color/white" />
+
+                    <Button
+                        android:id="@+id/red_card_button_team_b"
+                        android:layout_width="wrap_content"
+                        android:layout_height="36dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_weight="3"
+                        android:background="#FFCA28"
+                        android:text="@string/red_card"
+                        android:textColor="@android:color/white"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:onClick="teamBRedCardsCounter"/>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
         </LinearLayout>
 
     <Button
@@ -211,7 +376,7 @@
         android:layout_width="88dp"
         android:layout_height="48dp"
         android:background="#FFCA28"
-        android:text="RESET"
+        android:text="@string/reset"
         android:textColor="@android:color/white"
         android:textStyle="bold"
         tools:layout_editor_absoluteX="148dp"
